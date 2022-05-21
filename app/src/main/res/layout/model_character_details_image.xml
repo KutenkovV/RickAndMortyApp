@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/headerImageView"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="32dp"
+        android:elevation="4dp"
+        android:padding="1dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.SimpleMorty"
+        app:strokeColor="?colorOnSurface"
+        app:strokeWidth="1dp"
+        tools:src="@tools:sample/backgrounds/scenic[7]" />
+
+    <!-- кнопка добавить в -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:onClick="action"
+        android:id="@+id/addToLike"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0363F4"
+        android:layout_marginTop="15dp"
+        android:text="Добавить в избранное"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerImageView">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
